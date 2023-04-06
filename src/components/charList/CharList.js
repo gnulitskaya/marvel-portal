@@ -43,7 +43,7 @@ const CharList = () => {
                 </li>
             </ul>
             <button className="button button__main button__long center">
-                <div className="inner">load more</div>
+                <div className="inner">Load more</div>
             </button>
         </div>
     )
