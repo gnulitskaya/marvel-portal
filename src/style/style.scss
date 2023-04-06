@@ -1,0 +1,79 @@
+@import 'variables.scss';
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+dl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.app {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+body {
+    background-color: #171717;
+}
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid $grey-200;
+    background-color: $grey-200;
+    transition: all .3s ease;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: $white;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
