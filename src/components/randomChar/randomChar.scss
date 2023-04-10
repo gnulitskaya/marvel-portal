@@ -2,12 +2,13 @@
 
 .randomchar {
     display: grid;
+    align-items: center;
     color: $white;
     background-color: $grey-500;
     grid-template-columns: repeat(2, 50%);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
     &__block {
-        padding: 40px 20px;
+        padding: 0 20px;
         display: grid;
         grid-template-columns: 180px auto;
         column-gap: 30px;
