@@ -45,7 +45,7 @@ class CharList extends Component {
         const items = arr.map((item) => {
 
             return (
-                <li
+                <li onClick={() => this.props.onCharSelected(item.id)}
                     className="char__item"
                     key={item.id}>
                     <img src={item.thumbnail} alt={item.name}/>
