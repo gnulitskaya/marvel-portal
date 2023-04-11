@@ -93,8 +93,10 @@ const View = ({char}) => {
             </div>
             <div className="char__comics">Comics:</div>
             <ul className="char__comics-list">
+                {comics.length > 0 ? null : 'There is no comics for this character'}
                 {
                     comics.map((item, index) => {
+                        if(item > 9) return;
                         return (
                             <li key={index} className="char__comics-item">
                                 {item.name}
