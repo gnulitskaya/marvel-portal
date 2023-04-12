@@ -96,7 +96,7 @@ const View = ({char}) => {
                 {comics.length > 0 ? null : 'There is no comics for this character'}
                 {
                     comics.map((item, index) => {
-                        if(item > 9) return;
+                        if(index > 9) return;
                         return (
                             <li key={index} className="char__comics-item">
                                 {item.name}
